@@ -1,0 +1,81 @@
+.carousel-component {
+    position:relative;
+    overflow:hidden;
+    visibility:visible; /* component turns it on when first item is rendered */
+}
+
+.carousel-component ul.carousel-list {
+    width:10000000px;
+    position:relative;
+    z-index:1;
+}
+
+.carousel-component .carousel-list li {
+    float:left;
+    list-style:none;
+    overflow:hidden;
+}
+
+.carousel-component .carousel-list li img{ }
+
+.carousel-component .carousel-vertical li {
+    float:none;
+    margin-bottom:0px;
+}
+
+.carousel-component ul.carousel-vertical {
+    width:auto;
+}
+
+.carousel-component .carousel-clip-region {
+    overflow:hidden;
+    margin:0px auto;
+    position:relative;
+}
+
+
+.carousel-component {
+    padding:0px;
+    color:#618cbe;
+}
+.carousel-component ul.carousel-list {
+    margin:0px;
+    padding:0px 0px 0px 0px;
+}
+.carousel-component .carousel-list li {
+    text-align:center;
+    margin:0px 0px 0px 0px;
+    padding:0px;
+    font:10px verdana,arial,sans-serif;
+    color:#666;
+}
+.carousel-component .carousel-vertical li {
+}
+.carousel-component ul.carousel-vertical {
+}
+
+/* application */
+#prev-arrow-container{
+    float: left;
+    margin: 40px 0 0 6px;
+    padding: 0;
+	width:19px;
+}
+
+#next-arrow-container {
+    float: left;
+    margin: 40px 0 0 0;
+    padding: 0;
+	width:19px;
+}
+
+#next-arrow, #prev-arrow {cursor:pointer;}
+
+#html-carousel {}
+
+#html-carousel {
+    float: left;
+    margin: 0 25px;;
+    width: 410px;
+}
+

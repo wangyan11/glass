@@ -1,0 +1,98 @@
+/*重置样式*/
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, input,fieldset, legend, img, div, section, figure,header,nav,main,footer,textarea{ 
+	margin:0; 
+	padding:0; 
+	box-sizing: border-box;
+}
+body{
+	font-size:12px;
+	}
+fieldset, img{
+	 border:none; 
+	 }
+em, i, strong,h1, h2, h3, h4, h5, h6{ 
+	font-style:normal; 
+	font-weight:normal; 
+}
+ul, dl { 
+	list-style:none;
+	 } 
+a {
+	text-decoration:none; 
+	}
+input,button{
+	outline: none;
+	border: none;
+}
+img{
+	display: block;
+}
+
+/* 头部 */
+.header{
+	width: 100%;
+	height: 105px;
+	/* 头部上部分 */
+	.header_top{
+		width: 1265px;
+		height: 35px;
+		background: #e8e8e8;
+		ul{
+			width: 552px;
+			line-height: 35px;
+			margin-left: 650px;
+			li{
+				float: left;
+				a{
+					padding: 10px;
+					color: #494949;
+					span{
+						color: red;
+					};
+				};
+				&:last-child{
+					background: url("/img/tel.png") no-repeat 10px center;
+					span{
+						color: #C60101;
+						padding-left: 25px;
+					};
+				}
+			};
+		};
+		form{
+			float: right;
+			input{
+				width: 145px;
+				height: 24px;
+				float: left;
+				display: none;
+			};
+			button{
+				width: 24px;
+				height: 24px;
+				margin-top: 6px;
+				margin-right: 35px;
+				background: url("/img/search.png");
+			};
+		};
+	};
+	/* 头部中间部分 */
+	.header_mid{
+		width: 1210px;
+		height: 55px;
+		margin: 0 auto;
+		background: pink;
+		overflow: hidden;
+		.header_logo h1 a{
+			display: block;
+			width: 190px;
+			height: 38px;
+			margin-top: 10px;
+			margin-left: 10px;
+			background: url("/img/logo.jpg");
+			span{
+				display: none;
+			}
+		}
+	}
+}
