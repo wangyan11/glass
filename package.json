@@ -1,7 +1,7 @@
 {
   "name": "glass",
   "version": "1.0.0",
-  "description": "",
+  "description": "*",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,5 +13,13 @@
     "gulp": "^3.9.1",
     "gulp-connect": "^5.5.0",
     "gulp-sass": "^4.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangyan11/glass.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wangyan11/glass/issues"
+  },
+  "homepage": "https://github.com/wangyan11/glass#readme"
 }
