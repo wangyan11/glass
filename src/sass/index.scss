@@ -1,0 +1,101 @@
+
+.container{
+	/* banner */
+	.banner{
+		width: 1210px;
+		height: 400px;
+		margin: 0 auto;
+	}
+	/* pic */
+	.pic{
+		width: 1210px;
+		height: 305px;
+		margin: 0 auto;
+		border-top: 20px solid #f3f3f3;
+		border-bottom: 20px solid #f3f3f3;
+		.left{
+			float: left;
+			width: 907px;
+			height: 266px;
+			a{
+				float: left;
+				&:hover{
+					opacity: .5;
+				}
+			}
+		}
+		.right{
+			float: left;
+			width: 303px;
+			height: 266px;
+			&:hover{
+				opacity: .5;
+			}
+		}
+	}
+	/*HOT SALES */
+	.HOTSALES{
+		width: 1210px;
+		height: 448px;
+		border: 1px solid #cccccc;
+		margin: 0 auto;
+		.title{
+			width: 1210px;
+			height: 48px;
+			h2{
+				width: 185px;
+				font-size: 16px;
+				height: 48px;
+				padding-top: 17px;
+				padding-left: 22px;
+				float: left;
+			};
+			img{
+				padding-top: 24px;
+			}
+		}
+		.hot{
+			width: 1186px;
+			height: 390px;
+			margin-left: 10px;
+			margin: 0 auto;
+			border-top: 2px solid black;
+			.hot_left {
+				float: left;
+				img{
+					width: 272px;
+					height: 388px;
+				}
+			}
+			.hot_right{
+				width: 906px;
+				height: 388px;
+				float: left;
+				margin-left: 8px;
+				li{
+					float: left;
+					width: 302px;
+					height: 189px;
+					p{
+						font-size: 13px;
+						color: #2f2f2f;
+						text-align: center;
+						padding-top:15px ;
+					}
+				}
+				.li,.li2,.li3{
+					border-bottom: 1px solid #000000;
+					margin-top: 10px;
+				}
+				.li2{
+					border-left: 1px solid #cccccc;
+					border-right: 1px solid #cccccc;
+				}
+				.li5{
+					border-left: 1px solid #cccccc;
+					border-right: 1px solid #cccccc;
+				}
+			}
+		}
+	}
+}
