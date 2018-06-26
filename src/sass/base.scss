@@ -38,6 +38,7 @@ img{
 		height: 35px;
 		background: #e8e8e8;
 		position:fixed;
+		z-index:999;
 		.box{
 			width: 1210px;
 			height: 35px;
@@ -67,6 +68,7 @@ img{
 					};
 				};
 				form{
+					margin-top: 7px;
 					input{
 						width: 145px;
 						height: 24px;
@@ -76,7 +78,6 @@ img{
 					button{
 						width: 24px;
 						height: 24px;
-						margin-top: 7px;
 						margin-right: 10px;
 						background: url("/img/search.png");
 					};
