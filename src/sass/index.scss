@@ -369,6 +369,17 @@
 		border-bottom: 2px solid #d6d6d6;
 		margin: 0 auto;
 		position: relative;
+		overflow: hidden;
+		a {
+			display: block;
+			width: 10872px;
+			height: 430px;
+			img{
+				float: left;
+				width: 1208px;
+				height: 430px;
+			}
+		}
 		ul{
 			width: 1210px;
 			height: 30px;
