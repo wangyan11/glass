@@ -30,12 +30,20 @@ require(["config"],function  () {
 			$(this).find(".bg").hide();
 		})
 		//正文轮播图
-			// for(let i=0;i<lis.length;i++){
-				$(".points").on("mouseenter","li",function(){
-					console.log($(".points>li").index(this));	
-				})	
-			// }
-			
+		$(".points").on("mouseenter","li",function(){
+			$(".banner_imgs").animate({left: -1210*$(".points>li").index(this)}, "1000/60");
+			$(this).css({"background":"#A7212A"})
+		})	
+		$(".points").on("mouseleave","li",function(){
+			$(this).css({"background":"black","cursor":"pointer"})
+		})		
+		//正文遮罩
+		$(".imgs").on("mouseenter","li",function(){
+			$(this).find("div").show();
+		})
+		$(".imgs").on("mouseleave","li",function(){
+			$(this).find("div").hide();
+		})	
 		
 	})
 })

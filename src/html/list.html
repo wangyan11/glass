@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>光学眼镜</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/css/base.css" />
+    <link rel="stylesheet" type="text/css" href="/css/list.css" />
+</head>
+
+<body>
+    <!--header-->
+    <div class="header"></div>
+    <!--container-->
+    <div class="container">
+        <div class="list_top">
+            <div class="top">
+                <h3>筛选条件：</h3>
+                <label>查看更多筛选</label>
+            </div>
+            <div class="bottom">
+                <div class="bot_left">
+                    <p>
+                        <span>款式：</span>
+                        <input type="checkbox" />女士
+                        <input type="checkbox" />男士
+                        <input type="checkbox" />青少年
+                    </p>
+                    <p>
+                        <span>材质：</span>
+                        <input type="checkbox" />板材
+                        <input type="checkbox" />β钛
+                        <input type="checkbox" />纯钛
+                        <input type="checkbox" />金属
+                        <input type="checkbox" />铝镁合金
+                        <input type="checkbox" />TR90
+                        <input type="checkbox" />竹质材料
+                        <input type="checkbox" />碳纤维
+                        <input type="checkbox" />钨钛塑钢
+                        <input type="checkbox" />PC
+                    </p>
+                    <p>
+                        <span>框架形状：</span>
+                        <input type="checkbox" />矩形
+                        <input type="checkbox" />椭圆
+                        <input type="checkbox" />方形
+                        <input type="checkbox" />圆形
+                    </p>
+                    <p>
+                        <span>框架类型：</span>
+                        <input type="checkbox" />全框
+                        <input type="checkbox" />半框
+                        <input type="checkbox" />无框
+                    </p>
+                    <p>
+                        <span>尺寸：</span>
+                        <input type="checkbox" />小号
+                        <input type="checkbox" />中号
+                        <input type="checkbox" />大号
+                    </p>
+                    <p>
+                        <span>风格：</span>
+                        <input type="checkbox" />简约
+                        <input type="checkbox" />休闲
+                        <input type="checkbox" />时尚
+                        <input type="checkbox" />复古
+                        <input type="checkbox" />商务
+                        <input type="checkbox" />经典
+                        <input type="checkbox" />舒适
+                    </p>
+                    <p>
+                        <span>系列：</span>
+                        <input type="checkbox" />
+                        <img src="/img/xili1.png">
+                        <input type="checkbox" />
+                        <img src="/img/xilie2.png">
+                        <input type="checkbox" />
+                        <img src="/img/xilie3.png">
+                        <input type="checkbox" />
+                        <img src="/img/xilie4.png">
+                        <input type="checkbox" />
+                        <img src="/img/xilie5.png">
+                        <input type="checkbox" />
+                        
+                    </p>
+					<p>
+						<img src="/img/xilie6.png">
+					</p>
+					
+                </div>
+                <div class="bot_right">
+                    <p>颜色</p>
+                    <div class="color">
+                        <span style="background: #000000;"></span>
+                        <span style="background: #cbcbcb;"></span>
+                        <span style="background: #764b28;"></span>
+                        <span style="background: #ec1a23;"></span>
+                        <span style="background: #3c2213;"></span>
+                        <span style="background: #6d6e70;"></span>
+                        <span style="background: #2e3192;"></span>
+                        <span style="background: #652d90;"></span>
+                        <span style="background: #da618c;"></span>
+                        <span style="background: #ffffff;"></span>
+                        <span style="background: #01a04c;"></span>
+                        <span style="background: #f26422;"></span>
+                        <span style="background: #ffd101;"></span>
+                        <span style="background: #2e5c37;"></span>
+                        <span style="background: #bd612e;"></span>
+                        <span>
+                            <img src="/img/yanse.png">
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="list_mid">
+            <a href="/html/list.html">
+                <li class="list_li">所有产品</li>
+            </a>
+            <a href="/html/list.html">
+                <li class="list_li2">眼镜试戴</li>
+            </a>
+            <li class="list_li3">点击进入精准搜索</li>
+            <li class="list_li4">
+                <form action="/html/list.html">
+                    <span>货号搜索</span>
+                    <input type="text" />
+                    <button class="sou">搜索</button>
+                </form>
+            </li>
+            <li class="list_li5">共116件商品
+                <select>
+                    <option>1/12</option>
+                    <option>2/12</option>
+                    <option>3/12</option>
+                    <option>4/12</option>
+                    <option>5/12</option>
+                    <option>6/12</option>
+                    <option>7/12</option>
+                    <option>8/12</option>
+                    <option>9/12</option>
+                    <option>10/12</option>
+                    <option>11/12</option>
+                    <option>12/12</option>
+                </select>
+                <a href="/html/list.html">
+                    <button class="next">下一页▶</button>
+                </a>
+                <a href="/html/list.html">
+                    <button class="last">最后</button>
+                </a>
+            </li>
+        </ul>
+		<!--产品列表-->
+        <div class="list_products"></div>
+			
+        <!--产品模板-->
+        <script type="text/html" id="product_temp">
+        	{{each list products}}
+        	<dl class="list_dl">
+				<a href="/html/detail.html">
+					<dt><img src = "{{products.img}}"></dt>
+					<dd>{{products.desc}}</dd>
+					<dd>{{products.price}}</dd>
+        		</a>
+        	</dl>
+        	{{/each}}
+        </script>
+    </div>
+	
+    <!--footer-->
+    <div class="footer"></div>
+    <script src="/lib/require/require.js" data-main="/js/list"></script>
+</body>
+
+</html>

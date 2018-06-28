@@ -1,0 +1,19 @@
+.container{
+	width: 1210px;
+	background: #ededed;
+	margin: 0 auto;
+	.len{
+		width: 1210px;
+		height: 550px;
+		border: 1px solid #d6d6d6;
+		background: pink;
+		.prod_zoom{
+			width: 858px;
+			height: 550px;
+			float: left;
+			#imagezoom-wrap{
+				width: 737px;
+			}
+		}
+	}
+}
