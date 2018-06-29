@@ -7,7 +7,6 @@ require(["config"], function () {
                 const html = template("product_temp", {
                     list: data.res_body.list
                 });
-                console.log(data.res_body.list)
                 // 显示
                 $(".list_products").html(html);
             });
