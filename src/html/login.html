@@ -15,29 +15,23 @@
     <!--container-->
     <div class="container">
         <div class="warp">
-            <form action="/index.html" method="post">
+            <form action="#" method="post" class="reg_form" onsubmit="return false;">
                 <div class="form_top">
                     <p>登录</p>
                 </div>
                 <div class="form_bottom">
                     <span>E-mail : </span>
-                    <input type="text" name="mail" />
-                    <b>↑&nbsp;&nbsp;请输入正确的邮箱地址</b>
-                    <br/>
-                    <span>密&nbsp;&nbsp;&nbsp;码 : </span>
-                    <input type="password" name="password" />
-                    <b>↑&nbsp;&nbsp;请输入6个或更多字符</b>
-                    <br/>
+                    <input type="text" name="mail" class="mail"/>
+                    <b></b><br/>                   
+                    <span>密&nbsp;&nbsp;&nbsp;码 : </span><input type="password" name="password" class="password"/>
+                    <b></b><br/>
                     <input type="submit" class="sub" value="立即登录" />
-                    <p>如果您注册以后忘记了密码，请
-                        <a href="#">点击这里</a>
-                    </p>
+                    <p>如果您注册以后忘记了密码，请<a href="#">点击这里</a></p>
                 </div>
             </form>
             <div class="login_right">
                 <img src="/img/login_right.png">
-                <a href="/html/register.html">立即注册
-                </a>
+                <a href="/html/register.html">立即注册</a>
             </div>
         </div>
     </div>

@@ -1,6 +1,5 @@
 .container{
 	width: 1210px;
-	height: 485px;
 	background: #ededed;
 	margin: 0 auto;
 	.warp{
@@ -9,7 +8,19 @@
 		border: 1px solid #d6d6d6;
 		background: white;
 		margin: 0 auto;
-		form{
+		.warning{
+		    width: 970px;
+		    height: 45px;
+		    line-height: 45px;
+		    background: #FAEBE7;
+		    border: 1px solid #F16048;
+		    font-weight: bold;
+		    color: #DF280A;
+		    margin: 40px 0 0 30px;
+		    padding-left: 10px;
+		    display: none;
+		}
+		.reg_form{
 			width: 586px;
 			height: 401px;
 			margin: 40px 0 0 30px;
