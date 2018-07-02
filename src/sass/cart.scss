@@ -1,5 +1,107 @@
-.wrap{
+.container {
     width: 1210px;
-//  background: #EDEDED;
+    height: auto;
     margin: 0 auto;
+    border: 1px solid #D6D6D6;
+    .cart_empty {
+        width: 1210px;
+        height: 210px;
+        text-align: center;
+        line-height: 210px;
+        display: none;
+    }
+    .cart_not_empty {
+        width: 1210px;
+        display: none;
+        h2 {
+            margin-left: 25px;
+            height: 50px;
+            line-height: 50px;
+        }
+        table {
+            border: 1px solid #D6D6D6;
+            border-collapse: collapse;
+            margin-left: 25px;
+            width: 1160px;
+            font-size: 13px;
+            text-align: center;
+            td {
+                border: 1px solid #D6D6D6;
+                a{
+                    color:#000 ;
+                }
+            }
+            th {
+                border: 1px solid #D6D6D6;
+                height: 30px;
+            }
+            img {
+                width: 180px;
+            }
+            .input-group {
+                display: flex;
+                justify-content: center;
+                span {
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    border: 1px solid #D6D6D6;
+                    float: left;
+                    cursor: pointer;
+                }
+                input {
+                    width: 80px;
+                    height: 22px;
+                    border: 1px solid #D6D6D6;
+                    float: left;
+                    text-align: center;
+                }
+            }
+            tfoot tr {
+                height: 50px;
+            }
+        }
+        .none {
+            height: 80px;
+            width: 1160px;
+            margin-left: 25px;
+            font-size: 15px;
+            padding-top: 30px;
+            cursor: pointer;
+            border-bottom: 1px solid #D6D6D6;
+            span {
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                background: #D6D6D6;
+                text-align: center;
+                margin-right: 10px;
+            }
+        }
+        .confirm {
+            height: 100px;
+            a {
+                height: 40px;
+                width: 135px;
+                display: inline-block;
+                float: right;
+                text-align: center;
+                line-height: 40px;
+                font-weight: bolder;
+                font-size: 15px;
+                border-radius: 3px;
+                margin:20px 0 0 15px;
+                &:first-child{
+                    background: #D7263A;
+                    color: white;
+                    margin-right: 25px;
+                }
+                &:last-child{
+                    border: 1px solid #D6D6D6;
+                    color: black;
+                    
+                }
+            }
+        }
+    }
 }

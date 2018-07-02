@@ -1,5 +1,5 @@
 require(["config"], function() {
-	require(["jquery", "load", "zoom"], function($) {
+	require(["jquery", "load","cookie", "zoom"], function($) {
 		$(".zoom").elevateZoom({
 			zoomType: "inner",
 			gallery: 'gallery_01',

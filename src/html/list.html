@@ -159,10 +159,11 @@
         <script type="text/html" id="product_temp">
         	{{each list products}}
         	<dl class="list_dl">
-				<a href="/html/detail.html">
+				<a href="/html/cart.html">
+					<span class="id" style="display: none;">{{products.id}}</span>
 					<dt><img src = "{{products.img}}"></dt>
-					<dd>{{products.desc}}</dd>
-					<dd>{{products.price}}</dd>
+					<dd class="desc">{{products.desc}}</dd>
+					<dd class="price">{{products.price}}</dd>
         		</a>
         	</dl>
         	{{/each}}

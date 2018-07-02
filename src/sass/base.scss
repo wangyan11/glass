@@ -597,5 +597,13 @@ img {
             padding-top: 15px;
             padding-right: 8px;
         }
-    }
+    }  
+    .side{
+        position: fixed;
+        right: 0;
+        bottom: 50px;
+        a img{
+            margin-bottom: 5px;
+        }
+    } 
 }

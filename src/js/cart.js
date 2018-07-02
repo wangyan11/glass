@@ -1,5 +1,5 @@
 require(["config"], function() {
-	require(["jquery", "template", "load", "cookie"], function($, template) {
+	require(["jquery", "template","cookie", "load"], function($, template) {
 		$(function() {
 			/*********************************************************/
 			/* 读取并渲染购物车 */
@@ -9,23 +9,23 @@ require(["config"], function() {
 			let products = $.cookie("products") || [];
 			// 判断是否有选购过商品
 			if(products.length === 0) { // 未选购商品
-				$(".cart_empty").removeClass("hide");
+				$(".cart_empty").show();
 				return; // 结束执行
 			}
 
 			// 已有选购商品
-			$(".cart_not_empty").removeClass("hide");
+			$(".cart_not_empty").show();
 			// 渲染购物车模板
 			const html = template("cart_temp", {
 				products
 			});
 			// 显示
-			$(".cart_not_empty table tbody").html(html);
+			$("tbody").html(html);
 
 			/*********************************************************/
 			/* 删除 */
 			/*********************************************************/
-			$(".cart_not_empty table tbody").on("click", ".del_link", function() {
+			$(".cart_not_empty").on("click", ".del_link", function() {
 				// 获取待删除商品的id
 				const id = $(this).parents("tr").data("id");
 				// 获取指定id商品在 products 数组中的下标
@@ -41,12 +41,17 @@ require(["config"], function() {
 				$(this).parents("tr").remove();
 				// 判断购物车是否为空
 				if(products.length === 0) {
-					$(".cart_empty").removeClass("hide")
-						.next().addClass("hide");
+					$(".cart_empty").show()
+						.next().hide();
 				}
 				// 计算合计
 				calcTotal();
 			});
+			$(".none").click(function(){
+				$.cookie("products",null,{path:"/"});
+				$(".cart_empty").show();
+				$(".cart_not_empty").hide();
+			})
 
 			// 判断某 id 商品在数组中是否存在，
 			// 存在则返回其在数组中的下标，-1表示不存在
@@ -61,7 +66,7 @@ require(["config"], function() {
 			/*********************************************************/
 			/* 修改数量 */
 			/*********************************************************/
-			$(".cart_not_empty table tbody").on("click", ".minus, .add", function() {
+			$(".cart_not_empty").on("click", ".minus, .add", function() {
 				// 获取待修改数量商品的id
 				const id = $(this).parents("tr").data("id");
 				// 获取指定id商品在 products 数组中的下标
@@ -87,7 +92,7 @@ require(["config"], function() {
 				// 计算合计
 				calcTotal();
 			});
-			$(".cart_not_empty table tbody").on("blur", ".amount", function() {
+			$(".cart_not_empty").on("blur", ".amount", function() {
 				// 获取待修改数量商品的id
 				const id = $(this).parents("tr").data("id");
 				// 获取指定id商品在 products 数组中的下标
