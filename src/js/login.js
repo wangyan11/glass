@@ -28,7 +28,7 @@ require(["config"], function() {
 				if(data.res_code === 1) { //登录请求成功跳转首页
 					location = "/";
 					//保存cookie
-					$.cookie("mail", _mail, {expires: 7,path: "/"});
+					$.cookie("mail", _mail, {expires: 3,path: "/"});
 				} else { //登录请求失败
 					//判断邮箱是否正确
 					if(_mail == "") {
@@ -49,8 +49,5 @@ require(["config"], function() {
 				}
 			}, "json");
 		})
-		//获取cookie
-		$(".mail").val($.cookie("mail"));
-
 	})
 })

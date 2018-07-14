@@ -4,11 +4,10 @@ require(["config"], function() {
 			// 动态渲染商品数据
 			$.getJSON("/mock/list.json", function(data) {
 				// 渲染模板
-				const html = template("product_temp", {
-					list: data.res_body.list
-				});
+				const html = template("product_temp", {list: data.res_body.list});
 				// 显示
 				$(".list_products").html(html);
+				
 			});
 		});
 		$(".list_products").on("click", "dl", function() {
@@ -39,8 +38,6 @@ require(["config"], function() {
 				path: "/"
 			});
 			console.log("success");
-
-			return false; // 阻止超级链接跳转
 		});
 
 		// 判断某 id 商品在数组中是否存在，

@@ -1,0 +1,101 @@
+.container {
+    height: 630px;
+    width: 1210px;
+    border: 1px solid #D6D6D6;
+    margin: 0 auto;
+    .content {
+        width: 1170px;
+        height: 610px;
+        margin: 0 auto;
+        margin-top: 20px;
+        ul {
+            width: 1170px;
+            height: 75px;
+            display: flex;
+            justify-content: space-between;
+            li {
+                width: 288px;
+                height: 35px;
+                background: #ededed;
+                font-size: 18px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #5b5b5b;
+                b {
+                    font-size: 23px;
+                    padding-right: 15px;
+                }
+                &:nth-child(3) {
+                    background: #c43131;
+                    color: white;
+                }
+            }
+        }
+        h2 {
+            height: 37px;
+            border-bottom: 1px solid #D6D6D6;
+            line-height: 37px;
+            font-size: 16px;
+            padding-left: 15px;
+        }
+        .address {
+            width: 1125px;
+            height: 277px;
+            background: #ededed;
+            margin: 25px 0 10px 45px;
+            padding-left: 38px;
+            em {
+                color: #a72130;
+                font-size: 25px;
+                font-weight: bold;
+                height: 30px;
+                padding-right: 28px;
+                width: 10px;
+                display: inline-block;
+                vertical-align: middle;
+            }
+            strong {
+                width: 60px;
+                height: 30px;
+                display: inline-block;
+                text-align: right;
+                line-height: 30px;
+            }
+            input {
+                width: 230px;
+                height: 30px;
+                border: 1px solid #D6D6D6;
+                margin: 10px 0 0 40px;
+            }
+            .detail {
+                width: 410px;
+            }
+            select {
+                width: 142px;
+                height: 20px;
+                margin-top: 15px;
+            }
+            #province {
+                margin-left: 40px;
+            }
+            #city,
+            #district {
+                display: none;
+            }
+        }
+        h3 {
+            height: 30px;
+            a {
+                width: 130px;
+                height: 30px;
+                background: #d22135;
+                float: right;
+                color: white;
+                line-height: 30px;
+                text-align: center;
+                border-radius: 5px;
+            }
+        }
+    }
+}

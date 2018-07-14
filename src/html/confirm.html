@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>结账</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/css/base.css" />
+    <link rel="stylesheet" type="text/css" href="/css/confirm.css" />
+</head>
+
+<body>
+    <!--header-->
+    <div class="header"></div>
+    <!--container-->
+    <div class="container">
+    	<div class="content">
+    		<ul>
+    			<li><b>1</b>填写验光单</li>
+    			<li><b>2</b>加入购物车</li>
+    			<li><b>3</b>填写订单信息</li>
+    			<li><b>4</b>提交订单成功!</li>
+    		</ul>
+    		<h2>收货地址</h2>
+    		<div class="address">
+    			<em>*</em><strong>收件人  :</strong><input type="text" /><br />
+    			<em>*</em><strong>所在区域  :</strong>
+    			<select id="province"><option>请选择省份或地区</option></select>
+				<select id="city"><option>请选择</option></select>
+				<select id="district"><option>请选择</option></select><br />
+				<em>*</em><strong>详细地址  :</strong><span></span><input type="text" class="detail"/><br />
+				<em>*</em><strong>手机号码  :</strong><input type="text" /><br />
+				<em></em><strong>邮 &nbsp;&nbsp; &nbsp; &nbsp;编  :</strong><input type="text" /><br />
+				<em></em><strong>固定电话  :</strong><input type="text" />
+    		</div>
+    		<h3><a href="#">保存收货地址</a></h3>
+    		<h2>配送方式</h2>
+    		<h2>支付方式</h2>
+    		<h2>确认订单</h2>
+    	</div>
+    </div>
+	<!--footer-->
+    <div class="footer"></div>
+    <script src="/lib/require/require.js" data-main="/js/confirm"></script>
+</body>
+
+</html>

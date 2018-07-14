@@ -107,7 +107,7 @@ img {
                         ;
                     }
                     ;
-                    &:nth-child(8) {
+                    &:nth-last-child(2) {
                         background: url("/img/tel.png") no-repeat 10px center;
                         span {
                             color: #C60101;
@@ -116,7 +116,9 @@ img {
                         ;
                     }
                 }
-                ;
+                #loginInfo,#logout{
+                    display: none;
+                }
 				.checkShow{
 					width: 24px;
 					height: 24px;

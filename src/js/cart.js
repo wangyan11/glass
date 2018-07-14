@@ -7,18 +7,17 @@ require(["config"], function() {
 			$.cookie.json = true;
 			// 读取购物车保存的 cookie
 			let products = $.cookie("products") || [];
+			
 			// 判断是否有选购过商品
 			if(products.length === 0) { // 未选购商品
 				$(".cart_empty").show();
 				return; // 结束执行
 			}
-
+			
 			// 已有选购商品
 			$(".cart_not_empty").show();
 			// 渲染购物车模板
-			const html = template("cart_temp", {
-				products
-			});
+			const html = template("cart_temp", {products});
 			// 显示
 			$("tbody").html(html);
 
@@ -47,6 +46,7 @@ require(["config"], function() {
 				// 计算合计
 				calcTotal();
 			});
+			//如果点击清空购物车
 			$(".none").click(function(){
 				$.cookie("products",null,{path:"/"});
 				$(".cart_empty").show();
@@ -157,6 +157,13 @@ require(["config"], function() {
 				// 显示总金额
 				$('.total').text(sum.toFixed(2));
 			}
+			
 		});
+		//判断是否登录成功,如果未登录成功,跳转到登录页面
+		if($.cookie("mail") === "null"){
+			$("#accounts").click(function(){
+				$("#accounts").attr({href:"/html/login.html"});
+			})
+		}
 	})
 })

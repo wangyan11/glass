@@ -199,6 +199,10 @@
 				height: 32px;
 				line-height: 32px;
 			}
+			&:hover{
+			    box-shadow: 0 1px 8px #666;
+			    border: none;
+			}
 		}
 	}
 	.list_bm{
